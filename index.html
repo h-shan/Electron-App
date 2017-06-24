@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SysInfoApp</title>
+    <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css"></link>
+  </head>
+  <body>
+    <div class="container">
+         <h1>Enter Names and Password addresses of your contacts</h1>
+         <div class="form-group">
+            <label for="Username">Username</label><input type="text" name="Username" value="" id="Username" placeholder="Username" class="form-control" required>
+         </div>
+         <div class="form-group">
+            <label for="Password">Password</label><input type="text" name="Password" value="" id="Password" placeholder="Password" class="form-control" required>
+         </div>
+         <div class="form-group">
+           <label for="Project">Project</label><input type="text" name="Project" value="" id="Project" placeholder="Project" class="form-control" required>
+         </div>
+         <div class="form-group">
+            <button class="btn btn-primary" id="find-task">Find a task!</button>
+         </div>
+         <div id="task-list">
+            <table class="table-striped" id="task-table">
+               <tr>
+                  <th class="col-xs-2">ID</th>
+                  <th class="col-xs-4">Key</th>
+                  <th class="col-xs-6">Description</th>
+                  <th class="col-xs-2">Name</th>
+               </tr>
+            </table>
+         </div>
+         <script src="./view.js" ></script>
+      </div>
+  </body>
+  <script>
+    console.log(process);
+  </script>
+  <script>
+    require('./renderer.js');
+  </script>
+</html>
